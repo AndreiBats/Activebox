@@ -1,0 +1,45 @@
+.team {
+  padding: 114px 0;
+
+  &__flex-container {
+    display: flex;
+  }
+
+  &__box {
+    margin-right: 30px;
+    max-width: 275px;
+    max-height: 619px;
+  }
+
+  &__box:last-child {
+    margin-right: 0;
+  }
+
+  &__picture {
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+
+  &__subtitle {
+    color: $orange;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 17px;
+  }
+
+  &__description {
+    margin-bottom: 38px;
+  }
+
+  &__icon-container {
+    display: flex;
+  }
+
+  &__icon {
+    margin-right: 5px;
+  }
+}
