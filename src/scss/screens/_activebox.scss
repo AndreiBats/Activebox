@@ -7,7 +7,6 @@
       rgba(37, 43, 73, 0.8)
     ),
     url(../image/header-bg.png);
-  height: 747px;
 
   &__title {
     padding: 0px 200px;
@@ -30,6 +29,16 @@
     color: $white;
     padding: 28px 92px;
     border: none;
+    margin-bottom: 120px;
+    transition: 0.1s;
+  }
+
+  &__button:hover {
+    background-color: $red-button-hover;
+  }
+
+  &__button:active {
+    box-shadow: 4px 4px 30px $orange;
   }
 }
 
