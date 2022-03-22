@@ -1,0 +1,30 @@
+.download {
+  &__flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    padding-top: 17px;
+    padding-bottom: 17px;
+    margin-bottom: 5px;
+    color: $black;
+  }
+
+  &__subtitle {
+    color: $black;
+    margin-bottom: 48px;
+    text-transform: uppercase;
+  }
+
+  &__button {
+    padding: 32px 80px;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;
+    color: $white;
+    text-transform: uppercase;
+    background-color: $orange;
+  }
+}
