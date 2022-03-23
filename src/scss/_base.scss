@@ -2,7 +2,11 @@ body {
   font-family: $raleway-font-stack;
   font-size: 18px;
   line-height: 21px;
+}
+
+.container {
   max-width: 1510px;
+  margin: 0 auto;
 }
 
 h1 {
