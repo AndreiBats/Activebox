@@ -1,83 +1,63 @@
 .activebox {
-  text-align: center;
-  color: $white;
   background-image: linear-gradient(
       to right,
       rgba(37, 43, 73, 0.8),
       rgba(37, 43, 73, 0.8)
     ),
     url(../image/header-bg.png);
+}
 
-  &__title {
-    padding: 0px 200px;
-    text-transform: uppercase;
-    margin-bottom: 25px;
-  }
+.header-box {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid $grey;
 
-  &__description {
-    padding: 10px 130px;
-    font-size: 24px;
-    line-height: 28px;
-    margin-bottom: 82px;
-  }
-
-  &__button {
-    font-size: 24px;
-    text-transform: uppercase;
-    background-color: $orange;
-    font-weight: 900;
-    color: $white;
-    padding: 28px 92px;
-    border: none;
-    margin-bottom: 120px;
-    transition: 0.1s;
-  }
-
-  &__button:hover {
-    background-color: $red-button-hover;
-  }
-
-  &__button:active {
-    box-shadow: 4px 4px 30px $orange;
+  &__logo {
   }
 }
 
-.header {
-  font-size: 13px;
-  color: $white;
-  margin: 0 auto;
+.nav-info {
+  width: 55%;
 
-  &__container {
-    max-width: 1170px;
-    margin: 0 auto 113px;
+  &__block {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid $grey;
-  }
-
-  &__nav {
-    display: flex;
-    align-items: center;
-  }
-
-  &__nav-item {
-    text-transform: uppercase;
+    justify-content: space-around;
     list-style: none;
-    padding: 0 30px;
+    margin: 39px 0;
+    padding: 0 0;
   }
 
   &__link {
+    text-align: center;
+    font-size: 13px;
     color: $white;
     text-decoration: none;
-    transition: 0.2s;
-  }
-
-  &__link:hover {
-    border-bottom: 3px solid $grey;
+    text-transform: uppercase;
+    position: relative;
   }
 
   &__link:active {
-    border-bottom: 3px solid $orange;
+    color: $orange;
+  }
+
+  &__link::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0;
+    position: absolute;
+    bottom: 1;
+  }
+
+  &__link:hover::after {
+    width: 100%;
+    background-color: $grey;
+  }
+
+  &__link:active::after {
+    width: 100%;
+    background-color: $orange;
   }
 }

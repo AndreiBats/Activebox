@@ -6,17 +6,17 @@
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
   }
+
+  @media screen and (max-width: 320px) {
+    &__container {
+      display: block;
+    }
+  }
 }
 
 .item-about {
   text-align: center;
   margin: 116px 15px 0;
-
-  @media screen and (max-width: 1024px) {
-    .item-about {
-      margin: 98px 10px 0;
-    }
-  }
 
   &__icon {
     margin: 0 auto;
@@ -30,8 +30,15 @@
 
   @media screen and (max-width: 1024px) {
     &__icon {
-      width: 54px;
-      height: 54px;
+      width: 85px;
+      height: 85px;
+    }
+  }
+
+  @media screen and (max-width: 320px) {
+    &__icon {
+      width: 75px;
+      height: 75px;
     }
   }
 
@@ -57,5 +64,17 @@
       font-size: 14px;
       line-height: 16px;
     }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .item-about {
+    margin: 98px 20px 0;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .item-about {
+    margin: 50px 20px 0;
   }
 }
