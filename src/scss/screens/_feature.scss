@@ -6,23 +6,33 @@
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
   }
-
-  &__card {
-  }
 }
 
 .item-about {
   text-align: center;
   margin: 116px 15px 0;
 
+  @media screen and (max-width: 1024px) {
+    .item-about {
+      margin: 98px 10px 0;
+    }
+  }
+
   &__icon {
     margin: 0 auto;
-    width: 64px;
-    height: 64px;
+    width: 100px;
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 40px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    &__icon {
+      width: 54px;
+      height: 54px;
+    }
   }
 
   &__title {
@@ -31,7 +41,21 @@
     text-transform: uppercase;
   }
 
+  @media screen and (max-width: 1024px) {
+    &__title {
+      font-size: 18px;
+      line-height: 21px;
+    }
+  }
+
   &__text {
     color: $grey-description;
+  }
+
+  @media screen and (max-width: 1024px) {
+    &__text {
+      font-size: 14px;
+      line-height: 16px;
+    }
   }
 }
