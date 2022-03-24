@@ -7,7 +7,7 @@
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  @media screen and (max-width: 320px) {
+  @media screen and (max-width: 1024px) {
     &__container {
       display: block;
     }
@@ -28,14 +28,14 @@
     margin-bottom: 40px;
   }
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1510px) {
     &__icon {
       width: 85px;
       height: 85px;
     }
   }
 
-  @media screen and (max-width: 320px) {
+  @media screen and (max-width: 1024px) {
     &__icon {
       width: 75px;
       height: 75px;
@@ -48,7 +48,7 @@
     text-transform: uppercase;
   }
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1510px) {
     &__title {
       font-size: 18px;
       line-height: 21px;
@@ -59,7 +59,7 @@
     color: $grey-description;
   }
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1510px) {
     &__text {
       font-size: 14px;
       line-height: 16px;
@@ -67,13 +67,13 @@
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1510px) {
   .item-about {
     margin: 98px 20px 0;
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 1024px) {
   .item-about {
     margin: 50px 20px 0;
   }
