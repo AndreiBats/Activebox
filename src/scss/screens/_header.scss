@@ -1,45 +1,22 @@
 .header {
-  background-color: rgb(16, 24, 24);
-}
+  position: fixed;
+  max-width: 100%;
+  top: 0;
+  left: 10px;
+  z-index: 50;
 
-.header-box {
-  max-width: 1170px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid $grey;
-
+  &__container {
+  }
+  &__header-body {
+  }
   &__logo {
   }
-}
-
-.nav-info {
-  width: 55%;
-
-  &__block {
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    margin: 39px 0;
-    padding: 0 0;
+  &__burger {
   }
-
+  &__menu {
+  }
+  &__list {
+  }
   &__link {
-    text-align: center;
-    font-size: 13px;
-    color: $white;
-    text-decoration: none;
-    text-transform: uppercase;
-  }
-
-  &__link:hover {
-    border-bottom: 3px solid $grey;
-    padding-bottom: 40px;
-  }
-
-  &__link:active {
-    border-bottom: 3px solid $orange;
-    padding-bottom: 40px;
-    color: $orange;
   }
 }
