@@ -56,7 +56,7 @@
   }
 
   &__text {
-    color: map-get($colors, "grey-description");
+    color: map-get($colors, grey-description);
   }
 
   @include tablet {

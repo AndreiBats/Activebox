@@ -6,7 +6,7 @@
     ),
     url(../image/header-bg.png);
   text-align: center;
-  color: map-get($colors, "white");
+  color: map-get($colors, white);
   max-width: 1510px;
   margin: 0 auto;
 
@@ -52,20 +52,20 @@
 
 .button {
   padding: 30px 92px;
-  background-color: map-get($colors, "orange");
+  background-color: map-get($colors, orange);
   border: none;
   font-weight: 900;
   font-size: rem(24px);
   line-height: rem(28px);
   text-transform: uppercase;
-  color: map-get($colors, "white");
+  color: map-get($colors, white);
 
   &:hover {
-    background-color: map-get($colors, "red-button-hover");
+    background-color: map-get($colors, red-button-hover);
   }
 
   &:active {
-    box-shadow: 4px 4px 30px map-get($colors, "orange");
+    box-shadow: 4px 4px 30px map-get($colors, orange);
   }
 }
 

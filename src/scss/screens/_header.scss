@@ -10,7 +10,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    border-bottom: 1px solid map-get($colors, "grey");
+    border-bottom: 1px solid map-get($colors, grey);
     align-items: center;
     max-width: 1170px;
     height: 100px;
@@ -48,7 +48,7 @@
     line-height: rem(15px);
     text-align: center;
     text-transform: uppercase;
-    color: $white;
+    color: map-get($colors, grey);
     text-decoration: none;
     padding: 42px 20px 38px;
 
@@ -73,11 +73,11 @@
   }
 
   &__link:hover {
-    border-bottom: 3px solid map-get($colors, "grey");
+    border-bottom: 3px solid map-get($colors, grey);
   }
 
   &__link:active {
-    border-bottom: 3px solid map-get($colors, "orange");
+    border-bottom: 3px solid map-get($colors, orange);
   }
 
   &__toggler {
