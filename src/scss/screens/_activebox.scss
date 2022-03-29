@@ -6,7 +6,7 @@
     ),
     url(../image/header-bg.png);
   text-align: center;
-  color: $white;
+  color: map-get($colors, "white");
   max-width: 1510px;
   margin: 0 auto;
 
@@ -15,31 +15,31 @@
     text-transform: uppercase;
   }
 
-  @media screen and (max-width: 1510px) {
+  @include tablet {
     &__title {
-      font-size: 48px;
+      font-size: rem(48px);
       padding: 257px 20px 10px;
     }
   }
 
-  @media screen and (max-width: 1024px) {
+  @include mobile {
     &__title {
-      font-size: 36px;
-      line-height: 42px;
+      font-size: rem(36px);
+      line-height: rem(42px);
       padding: 106px 20px 10px;
     }
   }
 
   &__text {
-    font-size: 24px;
+    font-size: rem(24px);
     padding: 10px 170px;
     margin-bottom: 80px;
   }
 
-  @media screen and (max-width: 1024px) {
+  @include mobile {
     &__text {
-      font-size: 18px;
-      line-height: 21px;
+      font-size: rem(18px);
+      line-height: rem(21px);
       padding: 10px 20px;
       margin-bottom: 92px;
     }
@@ -52,30 +52,30 @@
 
 .button {
   padding: 30px 92px;
-  background-color: $orange;
+  background-color: map-get($colors, "orange");
   border: none;
   font-weight: 900;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: rem(24px);
+  line-height: rem(28px);
   text-transform: uppercase;
-  color: $white;
+  color: map-get($colors, "white");
 
   &:hover {
-    background-color: $red-button-hover;
+    background-color: map-get($colors, "red-button-hover");
   }
 
   &:active {
-    box-shadow: 4px 4px 30px $orange;
+    box-shadow: 4px 4px 30px map-get($colors, "orange");
   }
 }
 
-@media screen and (max-width: 1510px) {
+@include tablet {
   .button {
     padding: 30px 65px;
   }
 }
 
-@media screen and (max-width: 1024px) {
+@include mobile {
   .button {
     padding: 16px 51px;
   }

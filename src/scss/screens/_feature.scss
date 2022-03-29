@@ -7,7 +7,7 @@
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  @media screen and (max-width: 1024px) {
+  @include mobile {
     &__container {
       display: block;
     }
@@ -28,14 +28,14 @@
     margin-bottom: 40px;
   }
 
-  @media screen and (max-width: 1510px) {
+  @include tablet {
     &__icon {
       width: 85px;
       height: 85px;
     }
   }
 
-  @media screen and (max-width: 1024px) {
+  @include mobile {
     &__icon {
       width: 75px;
       height: 75px;
@@ -48,32 +48,32 @@
     text-transform: uppercase;
   }
 
-  @media screen and (max-width: 1510px) {
+  @include tablet {
     &__title {
-      font-size: 18px;
-      line-height: 21px;
+      font-size: rem(18px);
+      line-height: rem(21px);
     }
   }
 
   &__text {
-    color: $grey-description;
+    color: map-get($colors, "grey-description");
   }
 
-  @media screen and (max-width: 1510px) {
+  @include tablet {
     &__text {
-      font-size: 14px;
-      line-height: 16px;
+      font-size: rem(14px);
+      line-height: rem(16px);
     }
   }
 }
 
-@media screen and (max-width: 1510px) {
+@include tablet {
   .item-about {
     margin: 98px 20px 0;
   }
 }
 
-@media screen and (max-width: 1024px) {
+@include mobile {
   .item-about {
     margin: 40px 20px 0;
   }

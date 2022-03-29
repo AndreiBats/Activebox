@@ -1,12 +1,20 @@
+$base-font-size: 16px;
 $raleway-font-stack: "Raleway", Arial, sans-serif;
 $cardo-font-stack: "Cardo", Arial, sans-serif;
 
-$white: #ffffff;
-$black: #000000;
-$dark-title: #2d3033;
-$grey-description: #6c7279;
-$orange: #ff4343;
-$grey: #babbc5;
-$dark-bg: rgba(37, 43, 73, 0.8);
-$red-button-hover: #e71414;
-$red-photo-active: #b90c0c;
+$colors: (
+  white: #ffffff,
+  black: #000000,
+  dark-title: #2d3033,
+  grey-description: #6c7279,
+  orange: #ff4343,
+  grey: #babbc5,
+  dark-bg: rgba(37, 43, 73, 0.8),
+  red-button-hover: #e71414,
+  red-photo-active: #b90c0c,
+);
+
+$breakpoints: (
+  mobile: rem(768px),
+  tablet: rem(1024px),
+);

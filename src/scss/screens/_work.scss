@@ -9,7 +9,7 @@
     margin-bottom: 114px;
   }
 
-  @media screen and (max-width: 1024px) {
+  @include mobile {
     &__container {
       display: grid;
       grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -40,17 +40,17 @@
     bottom: 0;
     left: 0;
     transition: opacity 0.3s;
-    background: $orange;
-    color: $white;
+    background: map-get($colors, "orange");
+    color: map-get($colors, "white");
 
     &:hover {
       opacity: 0.8;
-      border: 2px solid $white;
+      border: 2px solid map-get($colors, "white");
     }
 
     &:active {
       opacity: 0.8;
-      border: 2px solid $white;
+      border: 2px solid map-get($colors, "white");
       background-color: $red-photo-active;
     }
   }
