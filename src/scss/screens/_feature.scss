@@ -1,4 +1,14 @@
 .feature {
+  padding: 116px 170px;
+
+  @include tablet {
+    padding: 78px 20px 80px;
+  }
+
+  @include mobile {
+    padding: 40px 20px 35px;
+  }
+
   &__container {
     max-width: 1170px;
     margin: 0 auto 133px;
@@ -12,11 +22,30 @@
       display: block;
     }
   }
+
+  &__card {
+    margin: 0 30px 100px;
+
+    @include tablet {
+      margin: 0 20px 60px;
+    }
+
+    @include mobile {
+      margin: 40px 20px 50px;
+    }
+  }
 }
 
 .item-about {
   text-align: center;
-  margin: 116px 15px 0;
+
+  @include tablet {
+    margin: 98px 20px 0;
+  }
+
+  @include mobile {
+    margin: 40px 20px 0;
+  }
 
   &__icon {
     margin: 0 auto;
@@ -26,17 +55,13 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 40px;
-  }
 
-  @include tablet {
-    &__icon {
+    @include tablet {
       width: 85px;
       height: 85px;
     }
-  }
 
-  @include mobile {
-    &__icon {
+    @include mobile {
       width: 75px;
       height: 75px;
     }
@@ -46,10 +71,8 @@
     padding: 25px 20px;
     margin-bottom: 20px;
     text-transform: uppercase;
-  }
 
-  @include tablet {
-    &__title {
+    @include tablet {
       font-size: rem(18px);
       line-height: rem(21px);
     }
@@ -57,24 +80,10 @@
 
   &__text {
     color: map-get($colors, grey-description);
-  }
 
-  @include tablet {
-    &__text {
+    @include tablet {
       font-size: rem(14px);
       line-height: rem(16px);
     }
-  }
-}
-
-@include tablet {
-  .item-about {
-    margin: 98px 20px 0;
-  }
-}
-
-@include mobile {
-  .item-about {
-    margin: 40px 20px 0;
   }
 }

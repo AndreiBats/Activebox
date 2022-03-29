@@ -9,44 +9,48 @@
   color: map-get($colors, white);
   max-width: 1510px;
   margin: 0 auto;
-
-  &__title {
-    padding: 230px 170px 10px;
-    text-transform: uppercase;
-  }
+  padding: 230px 170px 120px;
 
   @include tablet {
-    &__title {
-      font-size: rem(48px);
-      padding: 257px 20px 10px;
-    }
+    padding: 257px 20px 126px;
   }
 
   @include mobile {
-    &__title {
+    padding: 106px 20px 52px;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    margin-bottom: 31px;
+
+    @include tablet {
+      font-size: rem(48px);
+      margin-bottom: 62px;
+    }
+
+    @include mobile {
       font-size: rem(36px);
       line-height: rem(42px);
-      padding: 106px 20px 10px;
+      margin-bottom: 33px;
     }
   }
 
   &__text {
     font-size: rem(24px);
-    padding: 10px 170px;
-    margin-bottom: 80px;
-  }
+    margin-bottom: 82px;
 
-  @include mobile {
-    &__text {
+    @include tablet {
+      margin-bottom: 92px;
+    }
+
+    @include mobile {
       font-size: rem(18px);
       line-height: rem(21px);
-      padding: 10px 20px;
-      margin-bottom: 92px;
+      margin-bottom: 51px;
     }
   }
 
   &__button {
-    margin-bottom: 120px;
   }
 }
 
@@ -67,16 +71,12 @@
   &:active {
     box-shadow: 4px 4px 30px map-get($colors, orange);
   }
-}
 
-@include tablet {
-  .button {
+  @include tablet {
     padding: 30px 65px;
   }
-}
 
-@include mobile {
-  .button {
+  @include mobile {
     padding: 16px 51px;
   }
 }
