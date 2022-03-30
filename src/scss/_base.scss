@@ -1,12 +1,15 @@
 body {
-  font-family: $raleway-font-stack;
-  font-size: rem(18px);
   line-height: rem(21px);
+  font-size: rem(18px);
+  font-family: $raleway-font-stack;
 }
 
 .container {
-  max-width: 1170px;
+  $gutter: 20px;
+
+  max-width: 1170px + 2 * $gutter;
   margin: 0 auto;
+  padding: 0 $gutter;
 }
 
 h1 {
@@ -39,6 +42,8 @@ h6 {
   line-height: rem(15px);
 }
 
+/*Button */
+
 .button {
   background-color: map-get($colors, orange);
   border: none;
@@ -54,5 +59,38 @@ h6 {
 
   &:active {
     box-shadow: 4px 4px 30px map-get($colors, orange);
+  }
+}
+
+/*Swiper */
+
+.swiper {
+  width: 100%;
+}
+
+.swiper-pagination {
+  position: static;
+  margin-top: 31px;
+
+  @include tablet {
+    margin-top: 23px;
+  }
+
+  &-bullet {
+    border: 1px solid #7e5d6f;
+    background: none;
+    opacity: 1;
+    width: 14px;
+    height: 14px;
+
+    @include tablet {
+      width: 9.5px;
+
+      height: 9.5px;
+    }
+
+    &-active {
+      background: #7e5d6f;
+    }
   }
 }

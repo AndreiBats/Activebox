@@ -1,0 +1,108 @@
+.team {
+  padding: 114px 0;
+
+  @include tablet {
+    padding: 78px 0;
+  }
+
+  @include mobile {
+    padding: 35px 0;
+  }
+
+  &__flex-container {
+    display: flex;
+
+    @include mobile {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__box {
+    margin-right: 30px;
+    max-width: 275px;
+    max-height: 619px;
+
+    @include tablet {
+      margin-right: 25px;
+      max-width: 227px;
+      max-height: 520px;
+    }
+
+    @include mobile {
+      margin-right: 0;
+      margin-bottom: 56px;
+      max-width: 280px;
+    }
+  }
+
+  &__box:last-child {
+    margin-right: 0;
+  }
+
+  &__picture {
+    margin-bottom: 30px;
+
+    @include tablet {
+      margin-bottom: 25px;
+      width: 100%;
+    }
+
+    @include mobile {
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    margin-bottom: 5px;
+
+    @include tablet {
+      margin-bottom: 4.5px;
+      font-size: rem(18px);
+      line-height: rem(21px);
+    }
+  }
+
+  &__subtitle {
+    color: map-get($colors, red);
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 17px;
+
+    @include tablet {
+      margin-bottom: 23px;
+      font-size: rem(14px);
+      line-height: rem(16px);
+    }
+
+    @include mobile {
+      margin-bottom: 38px;
+    }
+  }
+
+  &__description {
+    margin-bottom: 38px;
+
+    @include tablet {
+      font-size: rem(14px);
+      line-height: rem(16px);
+    }
+
+    @include mobile {
+      margin-bottom: 55px;
+    }
+  }
+
+  &__icon-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 130px;
+  }
+
+  &__icon {
+    @include tablet {
+      width: 33px;
+      height: 33px;
+    }
+  }
+}

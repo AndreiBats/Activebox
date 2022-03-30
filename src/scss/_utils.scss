@@ -5,7 +5,7 @@
 }
 
 @function rem($pxValue) {
-  @return #{strip($pxValue) / strip($base-font-size)}rem;
+  @return #{math.div(strip($pxValue), strip($base-font-size))}rem;
 }
 
 @mixin tablet {

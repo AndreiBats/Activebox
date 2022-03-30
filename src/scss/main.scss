@@ -1,9 +1,17 @@
-@import "reset";
+@import "scss-reset/_reset.scss";
 @import "utils";
 @import "variables";
-@import "base";
 @import "fonts";
+@import "base";
+
+// Components
+
+// Screens
 @import "./screens/header";
 @import "./screens/activebox";
 @import "./screens/feature";
 @import "./screens/work";
+@import "screens/download";
+@import "screens/footer";
+@import "screens/team";
+@import "screens/testimonials";
