@@ -1,26 +1,31 @@
 {
   "name": "activebox",
   "version": "1.0.0",
-  "description": "",
+  "description": "ActiveBox project",
   "source": "src/index.html",
   "scripts": {
-    "start": "parcel --open",
-    "build": "parcel build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel",
+    "start:open": "parcel --open",
+    "build": "parcel build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AndreiBats/Activebox.git"
+    "url": "git+https://github.com/kuzkov/activebox.git"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/AndreiBats/Activebox/issues"
+    "url": "https://github.com/kuzkov/activebox/issues"
   },
-  "homepage": "https://github.com/AndreiBats/Activebox#readme",
+  "homepage": "https://github.com/kuzkov/activebox#readme",
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.3.2",
-    "parcel": "^2.3.2",
+    "@parcel/transformer-sass": "^2.4.0",
+    "parcel": "^2.4.0",
     "sass": "^1.49.9"
+  },
+  "dependencies": {
+    "scss-reset": "^1.2.2",
+    "swiper": "^8.0.7"
   }
 }

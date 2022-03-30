@@ -1,0 +1,19 @@
+$base-font-size: 16px;
+$raleway-font-stack: "Raleway", Arial, sans-serif;
+$cardo-font-stack: "Cardo", Arial, sans-serif;
+
+$colors: (
+  red: #ff4343,
+  white: #ffffff,
+  black: #000000,
+  dark-title: #2d3033,
+  grey-description: #6c7279,
+  grey: #babbc5,
+  purple: #353c65,
+  dark-purple: #2c3154,
+);
+
+$breakpoints: (
+  mobile: rem(768px),
+  tablet: rem(1024px),
+);
