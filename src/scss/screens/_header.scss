@@ -1,0 +1,112 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  &__header-body {
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 1px solid map-get($colors, grey);
+    align-items: center;
+    max-width: 1170px;
+    height: 100px;
+
+    @include tablet {
+      margin: 0 auto;
+      max-width: 984px;
+    }
+
+    @include mobile {
+      border-bottom: none;
+      margin: 0 20px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    list-style: none;
+
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+
+  &__menu {
+    @include mobile {
+      display: none;
+      width: 100%;
+    }
+  }
+
+  &__link {
+    font-weight: 700;
+    font-size: rem(13px);
+    line-height: rem(15px);
+    text-align: center;
+    text-transform: uppercase;
+    color: map-get($colors, grey);
+    text-decoration: none;
+    padding: 42px 20px 38px;
+
+    @include tablet {
+      font-size: rem(12px);
+      line-height: rem(14px);
+      width: 112px;
+    }
+
+    @include mobile {
+      text-align: left;
+      min-height: 65px;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      width: 100%;
+    }
+
+    &:hover {
+      border-bottom: none;
+    }
+  }
+
+  &__link:hover {
+    border-bottom: 3px solid map-get($colors, grey);
+  }
+
+  &__link:active {
+    border-bottom: 3px solid map-get($colors, orange);
+  }
+
+  &__toggler {
+    cursor: pointer;
+    user-select: none;
+    display: none;
+
+    @include mobile {
+      display: inline-block;
+    }
+  }
+
+  &__checkbox {
+    display: none;
+  }
+
+  &__checkbox:checked ~ .header__menu {
+    display: block;
+    background-image: linear-gradient(
+        to right,
+        rgba(37, 43, 73, 0.8),
+        rgba(37, 43, 73, 0.8)
+      ),
+      url(../image/header-bg.png);
+  }
+
+  @include mobile {
+    &__logo {
+      width: 103px;
+    }
+  }
+}

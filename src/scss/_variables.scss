@@ -3,6 +3,7 @@ $raleway-font-stack: "Raleway", Arial, sans-serif;
 $cardo-font-stack: "Cardo", Arial, sans-serif;
 
 $colors: (
+  orange: #ff4343,
   red: #ff4343,
   white: #ffffff,
   black: #000000,
@@ -11,6 +12,10 @@ $colors: (
   grey: #babbc5,
   purple: #353c65,
   dark-purple: #2c3154,
+  dark-bg: rgba(37, 43, 73, 0.8),
+  red-button-hover: #e71414,
+  red-photo-active: #b90c0c,
+  brown: #5c3249,
 );
 
 $breakpoints: (

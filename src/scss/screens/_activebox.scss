@@ -1,0 +1,64 @@
+.activebox {
+  background-image: linear-gradient(
+      to right,
+      rgba(37, 43, 73, 0.8),
+      rgba(37, 43, 73, 0.8)
+    ),
+    url(../image/header-bg.png);
+  text-align: center;
+  color: map-get($colors, white);
+  max-width: 1510px;
+  margin: 0 auto;
+  padding: 230px 170px 120px;
+
+  @include tablet {
+    padding: 257px 20px 126px;
+  }
+
+  @include mobile {
+    padding: 106px 20px 52px;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    margin-bottom: 31px;
+
+    @include tablet {
+      font-size: rem(48px);
+      margin-bottom: 62px;
+    }
+
+    @include mobile {
+      font-size: rem(36px);
+      line-height: rem(42px);
+      margin-bottom: 33px;
+    }
+  }
+
+  &__text {
+    font-size: rem(24px);
+    margin-bottom: 82px;
+
+    @include tablet {
+      margin-bottom: 92px;
+    }
+
+    @include mobile {
+      font-size: rem(18px);
+      line-height: rem(21px);
+      margin-bottom: 51px;
+    }
+  }
+
+  &__button {
+    padding: 30px 92px;
+
+    @include tablet {
+      padding: 30px 65px;
+    }
+
+    @include mobile {
+      padding: 16px 51px;
+    }
+  }
+}
