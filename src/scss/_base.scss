@@ -38,3 +38,21 @@ h6 {
   font-size: rem(13px);
   line-height: rem(15px);
 }
+
+.button {
+  background-color: map-get($colors, orange);
+  border: none;
+  font-weight: 900;
+  font-size: rem(24px);
+  line-height: rem(28px);
+  text-transform: uppercase;
+  color: map-get($colors, white);
+
+  &:hover {
+    background-color: map-get($colors, red-button-hover);
+  }
+
+  &:active {
+    box-shadow: 4px 4px 30px map-get($colors, orange);
+  }
+}

@@ -51,11 +51,19 @@
   }
 
   &__button {
+    padding: 30px 92px;
+
+    @include tablet {
+      padding: 30px 65px;
+    }
+
+    @include mobile {
+      padding: 16px 51px;
+    }
   }
 }
 
 .button {
-  padding: 30px 92px;
   background-color: map-get($colors, orange);
   border: none;
   font-weight: 900;
@@ -70,13 +78,5 @@
 
   &:active {
     box-shadow: 4px 4px 30px map-get($colors, orange);
-  }
-
-  @include tablet {
-    padding: 30px 65px;
-  }
-
-  @include mobile {
-    padding: 16px 51px;
   }
 }
