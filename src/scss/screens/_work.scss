@@ -6,8 +6,9 @@
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin-bottom: 114px;
+
     max-width: 1510px;
+    margin: 0 auto 114px;
   }
 
   @include mobile {
