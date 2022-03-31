@@ -509,9 +509,7 @@ h6 {
 .activebox {
   text-align: center;
   color: #fff;
-  max-width: 1510px;
   background-image: linear-gradient(to right, #252b49cc, #252b49cc), url("header-bg.ad20c184.png");
-  margin: 0 auto;
   padding: 230px 170px 120px;
 }
 
@@ -697,7 +695,6 @@ h6 {
 }
 
 .work__container {
-  max-width: 1510px;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   margin: 0 auto 114px;
@@ -823,14 +820,7 @@ h6 {
 }
 
 .download__button {
-  color: #fff;
-  text-transform: uppercase;
-  background-color: #ff4343;
-  border: none;
   padding: 32px 80px;
-  font-size: 24px;
-  font-weight: 900;
-  line-height: 28px;
 }
 
 @media (max-width: 64rem) {

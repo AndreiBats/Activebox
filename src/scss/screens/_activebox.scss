@@ -7,8 +7,7 @@
     url(../image/header-bg.png);
   text-align: center;
   color: map-get($colors, white);
-  max-width: 1510px;
-  margin: 0 auto;
+
   padding: 230px 170px 120px;
 
   @include tablet {
